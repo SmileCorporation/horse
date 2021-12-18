@@ -4,6 +4,7 @@
   "description": "horse架构站点 nomama ",
   "main": "index.js",
   "author": "985911032@qq.com",
+  "homepage": "https://smilecorporation.github.io/horse-docs/",
   "license": "MIT",
   "devDependencies": {
     "open": "^8.4.0",

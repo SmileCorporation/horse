@@ -12,6 +12,11 @@ const sidebar = {
 }
 
 module.exports = {
+    configureWebpack: {
+        output:{
+            publicPath:"https://smilecorporation.github.io/horse-docs/"
+        }
+      },
     title: 'horse 架构',
     description: '',
     head: [
@@ -38,13 +43,12 @@ module.exports = {
                 href: '/logo.png'
             }
         ],
-        ['link', { rel: 'manifest', href: '/manifest.json' }],
+    
         ['meta', { name: 'theme-color', content: '#3eaf7c' }],
         ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
         ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1.0' }],
         [
-            'meta',
-            { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }
+            'meta',  { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }
         ],
 
         ['meta', { name: 'msapplication-TileColor', content: '#000000' }],
@@ -112,6 +116,8 @@ module.exports = {
         lastUpdated: '最近更新时间',
         docsDir: 'src',
         sidebarDepth: 2,
+        base:"/horse-docs/",
+        dest:'public',
         sidebar: {
             collapsable: false,
             '/guide/': sidebar.guide,
